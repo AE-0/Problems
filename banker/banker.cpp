@@ -36,7 +36,7 @@ auto main(void) -> int {
         | filter([](const auto& pair) { return [](auto e) { return e; }(std::get<1>(pair)); })
         | transform([](const auto& pair) { return std::get<0>(pair); });
 
-    auto  indexes2 = proc 
+    auto indexes2 = proc 
         | enumerate
         | filter([](const auto& pair) { return [](auto e) { return e; }(std::get<1>(pair)); })
         | transform([](const auto& pair) { return std::get<0>(pair); });

@@ -1,4 +1,4 @@
-## 2679. Sum in a Matrix
+## 2679. Sum in a Matrix | [LeetCode](https://leetcode.com/problems/sum-in-a-matrix/)
 ### `Medium`
 
 You are given a **0-indexed** 2D integer array `nums`. Initially, your score is `0`. Perform the following operations until the matrix becomes empty:

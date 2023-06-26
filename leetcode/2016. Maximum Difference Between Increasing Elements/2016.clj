@@ -1,9 +1,9 @@
-; https://anon.to/id4PGz
+; https://anon.to/FnWfmO
 (def max-difference
   (comp
     #(if (zero? %) -1 %)
     (partial apply max)
-    (fn [x] (map - x (reductions min x)))))
+    #(map - % (reductions min %))))
 
 (println (max-difference [7 1 5 4])) ; 4
 (println (max-difference [9 4 3 2])) ; -1
